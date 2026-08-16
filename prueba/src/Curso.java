@@ -28,3 +28,6 @@ public class Curso {
         this.fechaInicio = fechaInicio;
     }
 }
+
+// no coloqué:
+// sede: podría ser un atributo importante si se trata de una casa de estudios con diversas sedes (ej: duoc).

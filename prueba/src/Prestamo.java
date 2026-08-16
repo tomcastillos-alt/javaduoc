@@ -21,5 +21,13 @@ public class Prestamo {
         System.out.println("Ingrese nombre del usuario: ");
     }
     public static void main(String[] args) {}
+
+    public Prestamo(String nombre_usuario, String nombre_libro, double p_multa, boolean estado, String fecha_pedida) {
+        this.nombre_usuario = nombre_usuario;
+        Nombre_libro = nombre_libro;
+        this.p_multa = p_multa;
+        this.estado = estado;
+        this.fecha_pedida = fecha_pedida;
+    }
 }
 

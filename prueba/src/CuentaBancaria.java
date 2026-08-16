@@ -4,6 +4,7 @@ public class CuentaBancaria {
     String password;
     String tipoCuenta;
     int balance;
+    int montoRetiro;
 
     public String getIdentificacion() {
         return identificacion;
@@ -17,11 +18,16 @@ public class CuentaBancaria {
         return balance;
     }
 
-    public CuentaBancaria(String identificacion, String password, String nombre, String tipoCuenta, int balance) {
+    public CuentaBancaria(String identificacion, String nombre, String password, String tipoCuenta, int balance, int montoRetiro) {
         this.identificacion = identificacion;
-        this.password = password;
         this.nombre = nombre;
+        this.password = password;
         this.tipoCuenta = tipoCuenta;
         this.balance = balance;
+        this.montoRetiro = montoRetiro;
     }
 }
+
+// Cosas que no coloqué:
+// id de sesión: preferí llamar identificación al atributo encargado de manejar la id de usuario
+// fuera de eso, no me imagino qué otros atributos podría llevar una cuenta bancaria. Quizás podrían sumarse algunos que hagan referencia a distintos créditos, tipos de tarjeta, o divisas.
